@@ -1,0 +1,66 @@
+.menu a {
+    text-decoration: none;
+}
+
+.menu li {
+    position: relative;
+    list-style: none;
+}
+
+.menu__list {
+    display: flex;
+}
+
+.menu__list>li {
+    margin: 0px 10px 0px 0px;
+}
+
+.menu__list>li:hover .sub-menu__list {
+    display: block;
+}
+
+.menu__list {
+    color: rgb(12, 12, 12);
+}
+
+.sub-menu__list {
+    display: none;
+    min-width: 300px;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    padding: 20px 0px 0px 0px;
+}
+
+.sub-menu__list>li {
+    background-color: rgb(245, 37, 10);
+}
+
+.sub-menu__list {
+    color: rgb(236, 18, 18);
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.sub-menu__list>li:hover .sub-sub-menu__list {
+    display: block;
+}
+
+.sub-sub-menu__list {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    min-width: 300px;
+    padding: 0px 0px 0px 5px;
+}
+
+.sub-sub-menu__list>li {
+    background-color: green;
+}
+
+.sub-sub-menu__list>li {
+    color: blue;
+    display: inline-block;
+    padding: 5px 10px;
+}
